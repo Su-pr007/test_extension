@@ -1,0 +1,13 @@
+{
+  "name": "My first extension",
+  "version": "0.1",
+  "description": "test extension",
+  "manifest_version": 2,
+  "content_scripts": [
+	{
+	  "js": ["init.js"],
+	  "css": ["styles.css"],
+	  "matches": ["<all_urls>"]
+	}
+  ]
+}
