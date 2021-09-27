@@ -1,13 +1,26 @@
 {
-  "name": "My first extension",
-  "version": "0.1",
-  "description": "test extension",
-  "manifest_version": 2,
-  "content_scripts": [
-	{
-	  "js": ["init.js"],
-	  "css": ["styles.css"],
-	  "matches": ["<all_urls>"]
-	}
-  ]
+	"name": "My first extension",
+	"version": "0.1",
+	"description": "test extension",
+	"manifest_version": 2,
+	"content_scripts": [
+		{
+			"js": [
+				"dist/index.js"
+			],
+			"css": [
+				"styles.css"
+			],
+			"matches": [
+				"<all_urls>"
+			]
+		}
+	],
+	"options_ui": {
+		"page": "options.html",
+		"open_in_tab": true
+	},
+	"permissions": [
+		"storage"
+	]
 }
