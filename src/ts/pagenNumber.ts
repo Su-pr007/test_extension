@@ -1,6 +1,8 @@
 import $ from 'jquery'
 
-XMLHttpRequest.bind(window, ['readystatechange', 'load', 'loadend'], showPageNumber)
+
+//BX.addCustomEvent('onAjaxSuccessFinish', showPageNumber)
+
 
 function showPageNumber () {
 
